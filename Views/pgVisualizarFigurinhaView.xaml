@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoAlbumCopa.Views.pgVisualizarFigurinhaView"
+             Title="Detalhes da Figurinha"
+             BackgroundColor="#F4F4F9">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+
+            <Label Text="Detalhes" FontSize="26" HorizontalTextAlignment="Center" TextColor="#8A1538" FontAttributes="Bold" Margin="0,0,0,10"/>
+
+            <Image x:Name="imgCadastro" MaximumHeightRequest="300" MaximumWidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,0,0,15"/>
+
+            <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True" BorderColor="#E0E0E0">
+                <VerticalStackLayout Spacing="8">
+                    <HorizontalStackLayout Spacing="5">
+                        <Label Text="Número no Sistema (Id):" FontAttributes="Bold" TextColor="#1F1F1F"/>
+                        <Label x:Name="lblId" TextColor="#555555"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Spacing="5">
+                        <Label Text="Nome do Jogador:" FontAttributes="Bold" TextColor="#1F1F1F"/>
+                        <Label x:Name="lblNome" TextColor="#555555"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Spacing="5">
+                        <Label Text="Seleção:" FontAttributes="Bold" TextColor="#1F1F1F"/>
+                        <Label x:Name="lblSelecao" TextColor="#555555"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Spacing="5">
+                        <Label Text="Tipo:" FontAttributes="Bold" TextColor="#1F1F1F"/>
+                        <Label x:Name="lblTipo" TextColor="#555555"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Spacing="15" Margin="0,10,0,0">
+                        <HorizontalStackLayout Spacing="5">
+                            <Label Text="Obtido:" FontAttributes="Bold" TextColor="#1F1F1F"/>
+                            <Label x:Name="lblObtido" TextColor="#28A745" FontAttributes="Bold"/>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout Spacing="5">
+                            <Label Text="Desejado:" FontAttributes="Bold" TextColor="#1F1F1F"/>
+                            <Label x:Name="lblDesejado" TextColor="#DC143C" FontAttributes="Bold"/>
+                        </HorizontalStackLayout>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button Text="Voltar" Clicked="btnVoltar_Clicked" BackgroundColor="#6C757D" TextColor="White" CornerRadius="8" Margin="0,20,0,0"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

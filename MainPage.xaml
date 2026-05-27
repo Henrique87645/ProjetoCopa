@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoAlbumCopa.MainPage"
+             BackgroundColor="#F4F4F9">
+
+    <Grid RowDefinitions="Auto, *, Auto" Padding="20">
+
+        <VerticalStackLayout Grid.Row="0" Spacing="10" HorizontalOptions="Center" Margin="0,30,0,0">
+            <Image Source="icon_soccer.png" 
+                   WidthRequest="100" 
+                   HeightRequest="100" 
+                   Aspect="AspectFit"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Álbum Copa 2026" FontSize="32" FontAttributes="Bold" TextColor="#8A1538" HorizontalTextAlignment="Center"/>
+            <Label Text="Gerencie sua coleção de figurinhas!" FontSize="16" TextColor="#333333" HorizontalTextAlignment="Center"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="1" Spacing="20" VerticalOptions="Center" HorizontalOptions="Center">
+
+            <Button Text="Cadastro" 
+                    ImageSource="icon_add.png"
+                    ContentLayout="Left, 15"
+                    FontSize="18" 
+                    Clicked="btnCadastro_Clicked" 
+                    BackgroundColor="#28A745" 
+                    TextColor="White" 
+                    FontAttributes="Bold" 
+                    WidthRequest="260" 
+                    HeightRequest="60" 
+                    CornerRadius="10"/>
+
+            <Button Text="Lista de Figurinhas" 
+                    ImageSource="icon_list.png"
+                    ContentLayout="Left, 15"
+                    FontSize="18" 
+                    Clicked="btnListagem_Clicked" 
+                    BackgroundColor="#007ACC" 
+                    TextColor="White" 
+                    FontAttributes="Bold" 
+                    WidthRequest="260" 
+                    HeightRequest="60" 
+                    CornerRadius="10"/>
+
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="2" Spacing="5" HorizontalOptions="Center">
+            <Label Text="Participantes: Henrique D Fernandes, Pedro H Tolentino, Vitor H Albino" FontSize="14" FontAttributes="Bold" TextColor="#1F1F1F" HorizontalTextAlignment="Center"/>
+            <Label Text="Versão v1.0.0" FontSize="12" TextColor="#555555" HorizontalTextAlignment="Center"/>
+        </VerticalStackLayout>
+
+    </Grid>
+</ContentPage>
