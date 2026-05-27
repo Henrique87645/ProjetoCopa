@@ -10,6 +10,7 @@ namespace ProjetoAlbumCopa.Models
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
 
+        public int teste { get; set; }  
         public string NomeJogador { get; set; }
         public string Selecao { get; set; }
         public string Tipo { get; set; }
